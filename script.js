@@ -37,4 +37,8 @@ list_container.addEventListener('click', (e) => {
     tasks[liIndex].checked = !tasks[liIndex].checked;
     renderTasks();
   }
+  if (e.target.tagName === "SPAN" && index !== null) {
+    tasks.splice(index, 1); // remove from array
+    renderTasks();
+  }
 });
