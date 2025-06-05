@@ -21,3 +21,8 @@ body {
   padding: 8px;
   font-size: 16px;
 }
+#but {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
