@@ -11,5 +11,11 @@ function renderTasks() {
     if (task.checked) {
       li.classList.add('checked');
     }
+    const span = document.createElement('span');
+    span.innerHTML = "&times;";
+    span.setAttribute('data-index', index);
+
+    li.appendChild(span);
+    list_container.appendChild(li);
   });
 }
