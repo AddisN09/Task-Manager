@@ -19,3 +19,10 @@ function renderTasks() {
     list_container.appendChild(li);
   });
 }
+button.addEventListener('click', () => {
+  const text = input_box.value.trim();
+  if (text === "") {
+    alert("You must write something");
+    return;
+  }
+});
