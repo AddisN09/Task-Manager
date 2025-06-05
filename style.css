@@ -40,3 +40,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+li.checked {
+  text-decoration: line-through;
+  color: gray;
+}
