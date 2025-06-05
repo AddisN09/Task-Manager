@@ -29,3 +29,12 @@ button.addEventListener('click', () => {
   input_box.value = "";
   renderTasks();
 });
+list_container.addEventListener('click', (e) => {
+  const index = e.target.getAttribute('data-index');
+
+  if (e.target.tagName === "LI") {
+    const liIndex = Array.from(list_container.children).indexOf(e.target);
+    tasks[liIndex].checked = !tasks[liIndex].checked;
+    renderTasks();
+  }
+});
