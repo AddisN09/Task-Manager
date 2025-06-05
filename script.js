@@ -25,4 +25,7 @@ button.addEventListener('click', () => {
     alert("You must write something");
     return;
   }
+  tasks.push({ text: text, checked: false });  
+  input_box.value = "";
+  renderTasks();
 });
