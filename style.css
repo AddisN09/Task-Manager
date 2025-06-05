@@ -44,3 +44,8 @@ li.checked {
   text-decoration: line-through;
   color: gray;
 }
+span {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
